@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-container {
+      width: 748px;
+      height: 748px;
+      background: #000;
+      /* row-gap: 9px; */
+    }
+
+    .container {
+      width: 748px;
+      height: 414px;
+      display: flex;
+      gap: 9px;
+    }
+
+    .red {
+      background: #e72f24;
+      height: 414px;
+      width: 320px;
+    }
+
+    .blank1 {
+      height: 414px;
+      width: 419px;
+      background: #F0F1EC;
+    }
+
+    .flex-container{
+      display: flex;
+      width: 748px;
+      height: 319px;
+    }
+
+    .container1 {
+      width: 689px;
+      height: 325px;
+      background: #000;
+      display: grid;
+      grid-template-columns: 320px 360px;
+      grid-template-rows: 295px 20px;
+      gap: 9px;
+    }
+
+    .blank2,
+    .blank3,
+    .blank4 {
+      background: #F0F1EC;
+    }
+
+    .blank5 {
+      display: flex;
+      background: #000;
+    }
+
+    .sub-con1 {
+      background: #f9d01e;
+      width: 198px;
+      height: 20px;
+    }
+
+    .sub-con2 {
+      background: #232629;
+      width: 153px;
+      height: 20px;
+    }
+
+    .blue {
+      width: 50px;
+      height: 130px;
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="main-container">
+    <div class="container">
+      <div class="red"></div>
+      <div class="blank1"></div>
+    </div>
+    <div class="flex-container">
+      <div class="container1">
+        <div class="blank2"></div>
+        <div class="blank3"></div>
+        <div class="blank4"></div>
+        <div class="blank5">
+          <div class="sub-con1"></div>
+          <div class="sub-con2"></div>
+        </div>
+      </div>
+      <div class="blue"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
